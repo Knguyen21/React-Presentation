@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Awesome Presentation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <!--Javascript Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <!--transforms html to javascript for webpage to read -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Jquery -->
+</head>
+<body>
+
+
+
+    <!--step 2 component --->
+    <div id="content"></div>  <!-- empty div. this is where you want to display the component -->
+
+    <script type="text/jsx">  //jsx syntax (convert to regular javascript)
+    // javascript script tag
+
+        var QueenKsComponent = React.createClass({ // create a component you can reference it
+            render: function() {
+                return (
+                        <h2>My name is QueenK</h2>
+                );
+            }
+        });
+
+        React.render(<QueenKsComponent />, document.getElementById('content'));
+     // 2 parameter ( what component you want to use, where you want to display it
+    </script>
+
+    <!-- step 2 component -->
+
+
+
+
+
+    <!-- step 3 Mulitple componont -
+    <div id="content"></div>
+
+    <script type="text/jsx">  //jsx syntax (convert to regular javascript)
+    // javascript script tag
+
+        var QueenKsComponent = React.createClass({ // create a component you can reference it
+            render: function() {
+                return (
+                        <h2>My name is QueenK</h2>
+                );
+            }
+        });
+
+        React.render(
+            <div>
+                <QueenKsComponent />
+                <QueenKsComponent />
+                <QueenKsComponent />
+                <QueenKsComponent />
+            </div>,  document.getElementById('content')
+        );
+     // 2 parameter ( what component you want to use, where you want to display it
+    </script>
+        step 3 Mulitple componont -->
+
+
+
+
+
+    <!--step 3 Properties
+    <div id="content"></div>
+
+    <script type="text/jsx">  //jsx syntax (convert to regular javascript)
+    // javascript script tag
+
+        var QueenKsComponent = React.createClass({ // create a component you can reference it
+            render: function() {
+                return (
+                        <h2>{this.props.user} loves to eat {this.props.food}</h2>
+                );
+            }
+        });
+
+        React.render(
+            <div>
+                <QueenKsComponent user="Billyonce" food="Spaghetti Bolangese" />
+                <QueenKsComponent user="Rooster" food="American Chop Suey"/>
+                <QueenKsComponent user="Palm Sugar" food="Ceral"/>
+                <QueenKsComponent user="SeaTuna" food="Noodle soup"/>
+                <QueenKsComponent user="Ms.Yao" food="Dry Hot Pot"/>
+            </div>,  document.getElementById('content')
+        );
+     // 2 parameter ( what component you want to use, where you want to display it
+    </script>
+    step 3 Properties -->
+
+
+
+    <!--Step 4 Children
+    <div id="content"></div>
+
+    <script type="text/jsx">  //jsx syntax (convert to regular javascript)
+    // javascript script tag
+
+        var QueenKsComponent = React.createClass({ // create a component you can reference it
+            render: function() {
+                return (
+                        <div>
+                            <h2>{this.props.user}</h2>
+                            <p>{this.props.children}</p>
+                        </div>
+                );
+            }
+        });
+
+        React.render(
+            <div>
+                <QueenKsComponent user="Jeff">He loves Baracuda</QueenKsComponent>
+                <QueenKsComponent user="Quake Head">She should have been named "Goose"</QueenKsComponent>
+            </div>,  document.getElementById('content')
+        );
+     // 2 parameter ( what component you want to use, where you want to display it
+    </script>
+    Step 4 Children -->
+
+
+
+
+    <!--Step 5 Event
+    <div id="content"></div>
+
+    <script type="text/jsx">  //jsx syntax (convert to regular javascript)
+    // javascript script tag
+
+        var QueenKsComponent = React.createClass({
+            eventFunction: function(){
+                alert("Ahhh Baracuda. Someone told me that " + this.props.children);
+            },
+            render: function() {
+                return (
+                        <div>
+                            <h2>{this.props.user}</h2>
+                            <a onClick={this.eventFunction} href="#" >Click Me</a>
+                        </div>
+                );
+            }
+        });
+
+        React.render(
+            <div>
+                <QueenKsComponent user="Jeff">He loves Baracuda</QueenKsComponent>
+                <QueenKsComponent user="Quake Head">She should have been named "Goose"</QueenKsComponent>
+            </div>,  document.getElementById('content')
+        );
+     // 2 parameter ( what component you want to use, where you want to display it
+    </script>
+    Step 5 Event -->
+
+
+
+</body>
+</html>
