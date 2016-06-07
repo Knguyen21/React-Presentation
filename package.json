@@ -36,5 +36,22 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
-  }
+  },
+  "description": "Sources: { http://blog.teamtreehouse.com/react-hype-real https://www.linkedin.com/pulse/what-reactjs-why-i-recommend-other-javascript-sandip-das http://facebook.github.io/react/docs/getting-started.html }",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Knguyen21/React-Presentation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Knguyen21/React-Presentation/issues"
+  },
+  "homepage": "https://github.com/Knguyen21/React-Presentation#readme",
+  "keywords": [
+    "ga",
+    "wdi",
+    "boston",
+    "js",
+    "template"
+  ]
 }
